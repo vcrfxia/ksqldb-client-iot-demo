@@ -25,12 +25,7 @@
             <url>https://ksqldb-maven.s3.amazonaws.com/maven/</url>
         </repository>
         <repository>
-            <id>ksqlDBstaging</id>
-            <name>ksqlDBstaging</name>
-            <url>https://staging-ksqldb-maven.s3-us-west-2.amazonaws.com/maven/</url>
-        </repository>
-        <repository>
-            <id>confluent</id>
+            <id>confluent-beta</id>
             <name>Confluent</name>
             <url>https://jenkins-confluent-packages-beta-maven.s3.amazonaws.com/6.1.0-beta200825192044/1/maven/</url>
         </repository>
@@ -42,11 +37,7 @@
             <url>https://ksqldb-maven.s3.amazonaws.com/maven/</url>
         </pluginRepository>
         <pluginRepository>
-            <id>ksqlDBstaging</id>
-            <url>https://staging-ksqldb-maven.s3-us-west-2.amazonaws.com/maven/</url>
-        </pluginRepository>
-        <pluginRepository>
-            <id>confluent</id>
+            <id>confluent-beta</id>
             <url>https://jenkins-confluent-packages-beta-maven.s3.amazonaws.com/6.1.0-beta200825192044/1/maven/</url>
         </pluginRepository>
     </pluginRepositories>
