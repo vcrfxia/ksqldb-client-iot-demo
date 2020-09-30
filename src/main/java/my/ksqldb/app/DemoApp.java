@@ -75,7 +75,7 @@ public class DemoApp {
     CompletableFuture<Void> cf = nonBlockingSTM
         // Add sensor type
         .addSensorType(DRONE_LOCATIONS_TYPE, DRONE_LOCATIONS_TOPIC)
-        .thenRun(DemoApp::waitForMaterializedStateStore)
+        .thenRunAsync(DemoApp::waitForMaterializedStateStore)
         // Query latest sensor readings
         .thenCompose(v -> nonBlockingSTM.getLatestReadings(DRONE_LOCATIONS_TYPE, "drone321"))
         .thenApply(results -> { printReadings(results); return null; })
@@ -94,9 +94,10 @@ public class DemoApp {
 
   private static void waitForMaterializedStateStore() {
     try {
-      // Querying for latest values immediately after adding a new sensor type fails because the
+      // Querying for latest values immediately after adding a new sensor type may fail because the
       // state store for pull queries is not yet ready. Here we wait a bit to avoid this.
-      Thread.sleep(3000);
+      System.out.println("Waiting for state store to become warm...");
+      Thread.sleep(5000);
     } catch (InterruptedException e) {
       throw new RuntimeException("Interrupted while waiting for state store to become warm");
     }
@@ -108,4 +109,5 @@ public class DemoApp {
       System.out.println("\t" + row.values());
     }
   }
+
 }
