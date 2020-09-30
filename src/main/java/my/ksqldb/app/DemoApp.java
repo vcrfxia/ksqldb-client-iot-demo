@@ -8,7 +8,7 @@ import java.util.concurrent.ExecutionException;
 /**
  * Example usage for the {@link BlockingSensorTypesManager} and
  * {@link NonBlockingSensorTypesManager} classes. See the associated blog post at
- * [TODO: blog post link] for more.
+ * https://www.confluent.io/blog/ksqldb-java-client-iot-inspired-demo/ for more.
  *
  * <p>Pre-requisites for running this demo:
  * <p><ul>

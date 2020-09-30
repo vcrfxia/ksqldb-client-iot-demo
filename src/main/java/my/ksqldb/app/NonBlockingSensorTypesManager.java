@@ -28,7 +28,8 @@ import java.util.stream.Collectors;
  * {@code CompletableFuture} composition. See {@link BlockingSensorTypesManager} for the
  * equivalent blocking versions, without {@code CompletableFuture} composition.
  *
- * <p>See the associated blog post at [TODO: blog post link] for more.
+ * <p>See the associated blog post at
+ * https://www.confluent.io/blog/ksqldb-java-client-iot-inspired-demo/ for more.
  */
 public class NonBlockingSensorTypesManager {
 

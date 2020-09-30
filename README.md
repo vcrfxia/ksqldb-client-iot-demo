@@ -14,4 +14,5 @@ associated resources). The methods in [`BlockingSensorTypesManager`](src/main/ja
 are blocking while those in [`NonBlockingSensorTypesManager`](src/main/java/my/ksqldb/app/NonBlockingSensorTypesManager.java)
 are not, and showcase `CompletableFuture` composition as well.
  
-See the associated blog post at [TODO: blog post link] for more.
+See the associated blog post at https://www.confluent.io/blog/ksqldb-java-client-iot-inspired-demo/
+for more.

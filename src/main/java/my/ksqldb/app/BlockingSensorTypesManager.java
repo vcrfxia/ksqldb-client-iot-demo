@@ -28,7 +28,8 @@ import java.util.stream.Collectors;
  * associated resources). The methods in this class are blocking. See
  * {@link NonBlockingSensorTypesManager} for non-blocking versions.
  *
- * <p>See the associated blog post at [TODO: blog post link] for more.
+ * <p>See the associated blog post at
+ * https://www.confluent.io/blog/ksqldb-java-client-iot-inspired-demo/ for more.
  */
 public class BlockingSensorTypesManager {
 
